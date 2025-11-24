@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-mean1 = [-3, -5]
+mean1 = [-3, 5]
 mean2 = [3, 5]
-cov1 = np.array([[10, 5], [5, 1]])
-cov2 = np.array([[10, 5], [5, 1]])
+cov1 = np.array([[10, 5], [1, 0]])
+cov2 = np.array([[10, 5], [0, 1]])
 pts1 = np.random.multivariate_normal(mean1, cov1, size=100)
 pts2 = np.random.multivariate_normal(mean2, cov2, size=100)
 
